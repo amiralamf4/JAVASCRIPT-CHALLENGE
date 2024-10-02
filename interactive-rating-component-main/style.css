@@ -1,0 +1,138 @@
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --lightdarkblue: hsl(211, 20%, 23%);
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Overpass";
+}
+
+body {
+   height: 100vh;
+   width: 100%;
+   color: var(--White);
+}
+main{
+   height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--VeryDarkBlue);
+}
+.card1{
+    background-color: var(--DarkBlue);
+    max-width: 400px;
+    min-width: 250px;
+    height: auto;
+    padding: 2.3rem;
+    border-radius: 35px;
+
+}
+.img{
+    width: 40px;
+    height: 40px;
+    background-color: var(--lightdarkblue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img1{
+    width: 20px;
+}
+.card1 h1{
+    margin: 30px 0px 10px 0px;
+}
+.card1 p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--LightGrey);
+    text-align: left;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.rate{
+    padding: 1rem 1.4rem;
+    background-color: var(--lightdarkblue);
+    border-radius: 50%;
+    &:hover{
+        cursor: pointer;
+        background-color: var(--Orange);
+        color: var(--VeryDarkBlue);
+    }
+}
+button{
+    width: 100%;
+    padding: 15px;
+    font-size: .9rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--Orange);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    &:hover{
+        cursor: pointer;
+        background-color: var(--White);
+    }
+}
+
+
+.card2{
+    background-color: var(--DarkBlue);
+    height: auto;
+    max-width: 500px;
+    min-width: 350px;
+    border-radius: 35px;
+    padding: 2.3rem;
+    text-align: center;
+    display: none; 
+}
+ .card2 :nth-child(2){
+    background-color: var(--lightdarkblue);
+    width: 10rem;
+    margin: 1.2rem 0rem 1.8rem 5rem;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: .8rem;
+    font-weight: 300;
+    color: var(--Orange);
+ }
+
+.card2 :nth-child(4){
+    color: var(--LightGrey);
+    margin-top: 1rem;
+    width: 20rem;
+}
+
+
+.attribution{
+    margin-top: 20px;
+    background-color: var(--DarkBlue);
+    padding: 10px;
+    border-radius: 50px;
+    color: var(--White);
+    font-weight: 200;
+    cursor: pointer;
+    transition: translate 0.3s ease-in;
+    &:hover{
+            translate: 0 -5px;
+    }
+   
+}
+a{
+    color:  var(--White);
+    text-decoration: none;
+}
