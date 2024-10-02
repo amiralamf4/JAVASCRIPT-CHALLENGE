@@ -38,7 +38,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/amiralamf4/JAVASCRIPT-CHALLENGE-/tree/main/interactive-rating-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://66fd20a80c21d7bd9f4dea31--magenta-gumption-046a7d.netlify.app/)
 
 
 
