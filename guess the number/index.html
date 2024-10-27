@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="64x64" href="./image/A.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+<body oncontextmenu="return false">
+    <main>
+        <h1>Game <span class="ball"></span><span class="ball"></span><span class="ball"></span></h1>
+        <p id="para">Guess any random number between 1 to 100.</p>
+        <p id="para2">Let's check your Luck</p>
+        <form>
+            <label for="guessField" id="guess">Guess a number</label><br>
+            <input type="text" id="guessField" class="guessField"><br>
+            <input type="submit" id="subt" value="Submit guess">
+        </form>
+
+        <div class="resultParas">
+            <p>Previous Guess: <span class="guesses"></span></p>
+            <p>Guesses remaining: <span class="lastResult">10</span></p>
+            <p class="loworhi"></p>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
