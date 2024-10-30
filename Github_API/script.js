@@ -1,3 +1,4 @@
+
 function searchUser() {
 const userInput=document.querySelector('#Username').value
 const userPic= document.querySelector('#pic')
