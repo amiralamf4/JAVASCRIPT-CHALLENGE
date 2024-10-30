@@ -1,0 +1,134 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:sans-serif;
+}
+
+html, body {
+   height: 100vh;
+   width: 100%;
+   background-color: #1D1D1E;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    max-width: 1440px;
+    border-radius: 20px;
+    background-color: #2B2A2A;
+    padding: 1.5rem;
+    margin: 0px 20px;
+}
+input{ 
+    padding: .8rem;
+    min-width: 250px;
+    max-width: 310px;
+    border-radius: 16px;
+    border: none;
+    font-size: 1rem;
+    &:focus{
+        outline-color: rgb(110, 110, 110);
+    }
+}
+button{
+    margin-top: .6rem;
+    padding: .5rem;
+    min-width: 8rem;
+    max-width: 2rem;
+    border-radius: 16px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 540;
+    cursor: pointer;
+}
+.result{
+    min-width: 350px;
+    width: auto;
+    max-width: 700px;
+    height: 20rem;
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 1fr auto;
+
+}
+.slide1{
+    width: 100%;
+    height: 100%;
+    grid-area: 1/1;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+}
+.slide2{
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    grid-area: 1/2;
+    padding: .5rem;
+}
+.image{
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+}
+#pic{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20%;
+    box-shadow: 0px 0px 25px 3px rgb(0, 0, 0);
+}
+p{
+    margin-top: .5rem;
+    min-width: 272px;
+    text-wrap: wrap;
+}
+.stats-card{
+   margin-top: .5rem;
+}
+#cardImg{
+    width: 400px;
+    min-width: 420px;
+ }
+
+@media (max-width:700px) {
+    body{
+        align-items: normal;
+    }
+    main{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 10px 20px 0px 20px;
+        position: relative;
+        min-width: 320px;
+        min-height: auto;
+    }
+    .result{
+        grid-template-columns: auto;
+        min-width: 350px;
+    }
+    .slide1{
+        width: 300px;
+    }
+    .slide2{
+        grid-area: 2/1;
+        width: 300px;
+        padding: 0px 0px 0px 10px;
+    }
+    
+    #cardImg{
+        max-width: 300px;
+        width: 334px;
+        min-width: 220px;
+     }
+}
