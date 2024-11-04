@@ -5,6 +5,9 @@ const userPic= document.querySelector('#pic')
 const userName= document.querySelector('h2')
 const userBio = document.querySelector("p");
 const statCard= document.querySelector('.stats-card')
+const x= document.querySelector('#x');
+const github=document.querySelector('#github');
+
 const url = `https://api.github.com/users/${userInput}`;
 const statsUrl = `https://github-readme-stats.vercel.app/api?username=${userInput}&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false`;
 
@@ -27,6 +30,16 @@ fetch(url)
     statCard.innerHTML='';
     statsImg.id="cardImg"
     statCard.appendChild(statsImg);    
+
+    // Social Media link
+    // Twitter
+
+    x.href =`https://x.com/${data.twitter_username}`;
+    console.log(x);
+        
+    // Github
+    github.href= `https://github.com/${userInput}`;
+
 })
 .catch(error => console.error("Error fetching user:", error));
 }

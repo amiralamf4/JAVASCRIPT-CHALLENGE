@@ -17,8 +17,8 @@ html, body {
 main{
     display: flex;
     flex-direction: column;
-    min-width: 350px;
-    max-width: 1440px;
+    min-width: 750px;
+    max-width: 1010px;
     border-radius: 20px;
     background-color: #3877d6;
     padding: 1.5rem;
@@ -47,19 +47,13 @@ button{
     cursor: pointer;
 }
 .result{
-    min-width: 350px;
-    width: auto;
-    max-width: 700px;
-    height: 20rem;
-    margin-top: 1rem;
     display: grid;
-    justify-content: center;
-    grid-template-columns: 200px auto;
-    grid-template-rows: 1fr auto;
+    grid-template-columns: 200px minmax(460px, 600px);
 
 }
 .slide1{
-    width: 100%;
+    width: auto;
+    max-width: 500px;
     height: 100%;
     grid-area: 1/1;
     padding: .5rem;
@@ -90,12 +84,16 @@ button{
     border-radius: 20%;
     box-shadow: 0px 0px 25px 2px rgb(92, 172, 219);
 }
+.icon{
+    display: flex;
+    gap: 1rem;
+}
 i{
     background-color: #3877d6;
     padding: .5rem;
     font-size: 1.3rem;
     border-radius: 30%;
-    box-shadow: 0px 0px 25px 1px rgba(92, 172, 219, 0.518);
+    box-shadow: 0px 0px 25px 1px rgba(92, 172, 219, 0.895);
     cursor: pointer;
     color: white;
     &:hover{
@@ -120,34 +118,35 @@ p{
     min-width: 420px;
  }
 
-@media (max-width:700px) {
+@media (max-width:760px) {
     body{
         align-items: normal;
+        padding: 0px;
     }
     main{
+        min-width: 320px;
         align-items: center;
-        display: flex;
-        margin: 10px 20px 0px 20px;
+        margin: auto;
         position: relative;
         min-width: 320px;
         min-height: auto;
     }
     .result{
-        grid-template-columns: auto;
-        min-width: 350px;
+        grid-template-columns: minmax(280px, 1fr);
     }
     .slide1{
-        width: 300px;
+        min-width: 280px;
+        max-width: 100%;
     }
     .slide2{
         margin-top: 1rem;
         grid-area: 2/1;
-        width: 300px;
-        padding: 0px 0px 0px 10px;
+        min-width: 280px;
+        padding: 0px 0px 0px 0px;
     }
     
     #cardImg{
-        max-width: 300px;
+        max-width: 280px;
         width: 334px;
         min-width: 220px;
      }
