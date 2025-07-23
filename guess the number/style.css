@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kablammo&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kablammo&family=Overpass:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Sevillana&display=swap');
+
+
+:root{
+    --card:#5c80d5;
+    --hading:#c8ff00;
+    --dot:#67c719;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:"Oxanium", sans-serif;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+   color: white;
+   background-image: linear-gradient(rgb(30, 8, 60) 50%, rgb(28, 7, 71) 50%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+main{
+    background-color: var(--card);
+    min-width: 300px;
+    width: 500px;
+    max-width: 800px;
+    padding: 30px 20px 50px 20px;
+    margin: 30px 20px;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 9px 1px rgba(4, 19, 64, 0.522);
+}
+h1{
+    margin: 0px 0px 45px 0px;
+    font-size: 3rem;
+    font-family: "Kablammo";
+    color: var(--hading);
+}
+.ball{
+    padding: 2px;
+    margin-left: 5px;
+    width: 7px;
+    height: 7px;
+    background-color: var(--dot);
+    border-radius: 50%;
+    display: inline-block;
+}
+#para{
+    margin-bottom: 5px;
+}
+#para2{
+    margin-bottom: 30px;
+}
+label{
+    font-size: 1.5rem;
+}
+#guessField{
+    margin: 25px 0px 15px 0px;
+    border: none;
+    border-radius: 18px;
+    height: 40px;
+    min-width: 220px;
+    max-width: 450px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+input:focus{
+    outline: none;
+}
+#subt{
+    margin: 15px 0px 20px 0px;
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 460;
+}
+
+.resultParas>p{
+    margin: 5px 0px;
+}
+
